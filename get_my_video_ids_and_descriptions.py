@@ -4,6 +4,19 @@
 # See instructions for running these code samples locally:
 # https://developers.google.com/explorer-help/guides/code_samples#python
 
+# ----------------------------------
+# NOTE: This code was originally written by Federico Tartarini (see https://github.com/FedericoTartarini/youtube-api-edit-videos-metadata).
+# I updated it (with the help of ChatGPT, and it works, yay!) in order to be compliant to the 2.1.2 version of the pandas library.
+# ----------------------------------
+
+# This Python file, along with the rest of the repo, isn't protected by any kind of copyright. However, if you modify the code and publish it, we would like to see proper credit.
+
+# Mar 7, 2021 - Federico Tartarini | https://github.com/FedericoTartarini
+
+# Nov 11, 2023 - Giovanni Rota | https://github.com/Glort572
+
+# =========================================================================
+
 import os
 import json
 import mysecrets
@@ -19,7 +32,7 @@ def authenticate():
     api_version = "v3"
 
     youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey=mysecrets.developer_key
+        api_service_name, api_version, developerKey=mysecrets.developer_key  # Either make new file "mysecrets.py" or replace "mysecrets.developer_key" with the API key 
     )
 
     return youtube
@@ -32,7 +45,6 @@ def get_video_ids(channel_id):
     next_page_token = ""
 
     while more_than_50_results:
-
         request = youtube.search().list(
             part="snippet",
             channelId=channel_id,
@@ -60,9 +72,11 @@ def get_video_ids(channel_id):
         except FileNotFoundError:
             pass
 
-        df_ids.append(
-            pd.DataFrame(video_ids, columns=["video-ids"])
-        ).drop_duplicates().to_csv(file_video_ids, index=False)
+        # Concatenate the existing DataFrame and the new video IDs, drop duplicates
+        df_ids = pd.concat([df_ids, pd.DataFrame(video_ids, columns=["video-ids"])], ignore_index=True).drop_duplicates()
+
+        # Save the updated DataFrame to the CSV file
+        df_ids.to_csv(file_video_ids, index=False)
 
 
 def get_video_description():
@@ -73,29 +87,29 @@ def get_video_description():
     dict_videos = {}
 
     for video_id in df_ids["video-ids"].unique():
+        try:
+            request = youtube.videos().list(part="snippet", id=video_id)
 
-        request = youtube.videos().list(part="snippet", id=video_id)
+            response = request.execute()
 
-        response = request.execute()
+            if response.get("items") and len(response["items"]) > 0:
+                snippet = response["items"][0]["snippet"]
+                title = snippet.get("title", "")
+                description = snippet.get("description", "").split("\n")
+                tags = snippet.get("tags", [])
 
-        # change this code if you want to save more info from a video
-        if "tags" in response["items"][0]["snippet"].keys():
-            dict_video = {
-                "title": response["items"][0]["snippet"]["title"],
-                "description": response["items"][0]["snippet"]["description"].split(
-                    "\n"
-                ),
-                "tags": response["items"][0]["snippet"]["tags"],
-            }
-        else:
-            dict_video = {
-                "title": response["items"][0]["snippet"]["title"],
-                "description": response["items"][0]["snippet"]["description"].split(
-                    "\n"
-                ),
-            }
+                dict_video = {
+                    "title": title,
+                    "description": description,
+                    "tags": tags,
+                }
 
-        dict_videos[response["items"][0]["id"]] = dict_video
+                dict_videos[video_id] = dict_video
+            else:
+                print(f"Warning: No data found for video with ID {video_id}")
+
+        except Exception as e:
+            print(f"Error processing video with ID {video_id}: {e}")
 
     with open("video_info.json", "w", encoding="utf-8") as file:
         file.write(json.dumps(dict_videos, indent=2))
