@@ -1,6 +1,5 @@
 # Python YouTube API to update metadata
 
-![example workflow](https://github.com/glort572/yt-aevm-pandas-2.1.2/actions/workflows/main.yml/badge.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/glort572/yt-aevm-pandas-2.1.2)
 
 Just some Python files which can help you update the metadata (i.e. title, description, tags) in all your YouTube videos **without wasting time**.
