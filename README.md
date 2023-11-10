@@ -3,6 +3,7 @@
 Just some Python files which can help you update the metadata (i.e. title, description, tags) in all your YouTube videos **without wasting time**.
 
 I recommend watching [Federico's video](https://www.youtube.com/watch?v=t6_sJ1y5NJ8) to understand how it works before using it.
+[![Federico's video](https://img.youtube.com/vi/t6_sJ1y5NJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=t6_sJ1y5NJ8)
 
 ## NOTE
 This code was originally written by [Federico Tartarini](https://github.com/FedericoTartarini/youtube-api-edit-videos-metadata).
