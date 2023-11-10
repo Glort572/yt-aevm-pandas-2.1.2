@@ -4,6 +4,21 @@
 # See instructions for running these code samples locally:
 # https://developers.google.com/explorer-help/guides/code_samples#python
 
+
+# ----------------------------------
+# NOTE: This code was originally written by Federico Tartarini (see https://github.com/FedericoTartarini/youtube-api-edit-videos-metadata).
+# I updated it (with the help of ChatGPT, and it works, yay!) in order to be compliant to the 2.1.2 version of the pandas library.
+# ----------------------------------
+
+# This Python file, along with the rest of the repo, isn't protected by any kind of copyright. However, if you modify the code and publish it, we would like to see proper credit.
+
+# Mar 7, 2021 - Federico Tartarini | https://github.com/FedericoTartarini
+
+# Nov 11, 2023 - Giovanni Rota | https://github.com/Glort572
+
+# =========================================================================
+
+
 import os
 import json
 import sys
