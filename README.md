@@ -9,7 +9,7 @@ I recommend watching [Federico's video](https://www.youtube.com/watch?v=t6_sJ1y5
 
 ## NOTE
 This code was originally written by [Federico Tartarini](https://github.com/FedericoTartarini/youtube-api-edit-videos-metadata).
-I updated it (with the help of [ChatGPT](https://chat.openai.com/), and it works, yay!) in order to be compliant to the 2.1.2 version of the `pandas` library.
+I updated it (with the help of [ChatGPT](https://chat.openai.com/), and it works, yay!) in order to be compliant with the 2.1.2 version of the `pandas` library.
 
 This repo isn't protected by any kind of copyright. However, if you modify the code and publish it, we would like to see proper credit.
 
