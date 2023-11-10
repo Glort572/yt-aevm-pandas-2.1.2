@@ -18,9 +18,9 @@ Nov 11, 2023 - Giovanni Rota | https://github.com/Glort572
 
 To conclude, there are some screenshots of the conversation between me and ChatGPT if you're curious enough to see how I managed to make it work.
 
-![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-25-40 ChatGPT.png)
-![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-26-19 ChatGPT.png)
-![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-26-51 ChatGPT.png)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-25-40 ChatGPT.png)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-26-19 ChatGPT.png)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-26-51 ChatGPT.png)
 ![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-27-05 ChatGPT.png)
 ![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-27-19 ChatGPT.png)
 ![alt text](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot 2023-11-10 at 00-27-42 ChatGPT.png)
