@@ -18,3 +18,18 @@ Nov 11, 2023 - Giovanni Rota | https://github.com/Glort572
 
 To conclude, there are some screenshots of the conversation between me and ChatGPT if you're curious enough to see how I managed to make it work.
 
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-25-40_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-26-19_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-26-51_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-27-05_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-27-19_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-27-42_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-28-28_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-28-42_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-29-01_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-29-17_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-29-45_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-29-57_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-30-17_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-30-36_ChatGPT.png?raw=true)
+![](https://github.com/Glort572/yt-aevm-pandas-2.1.2/blob/master/Screenshot_2023-11-10_at_00-30-56_ChatGPT.png?raw=true)
