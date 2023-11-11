@@ -7,6 +7,9 @@ Just some Python files which can help you update the metadata (i.e. title, descr
 I recommend watching [Federico's video](https://www.youtube.com/watch?v=t6_sJ1y5NJ8) to understand how it works before using it.
 [![Federico's video](https://img.youtube.com/vi/t6_sJ1y5NJ8/maxresdefault.jpg)](https://www.youtube.com/watch?v=t6_sJ1y5NJ8)
 
+## But why did I make this change?
+After having replaced Python 3.10 with Python 3.11, I reinstalled the libraries required for the execution of the code, but I couldn't reinstall pandas 1.1.2 (required in the original repo) due to its deprecation and pip throwing an error. So I decided to update the code with the latest version of pandas. The outcome was awesome and the code works as it used to work on my Python 3.10!
+
 ## NOTE
 This code was originally written by [Federico Tartarini](https://github.com/FedericoTartarini/youtube-api-edit-videos-metadata).
 I updated it (with the help of [ChatGPT](https://chat.openai.com/), and it works, yay!) in order to be compliant with the 2.1.2 version of the `pandas` library.
